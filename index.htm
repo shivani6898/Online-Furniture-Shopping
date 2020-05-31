@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>store</title>
+    <!-- Bootstrap Cdn -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!-- Font Awesome CDN -->
+    <script src="https://kit.fontawesome.com/b454f019e3.js" crossorigin="anonymous"></script>
+    <!-- slick slider -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+
+
+    <!-- custom stylesheet -->
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+
+<body>
+    <!-- header -->
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class=" col-md-4 col-sm-12 col-12">
+                    <div class="btn-group">
+                        <button class="btn border dropdown-toggle my-md-4 my-2 text-white" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            USD
+                        </button>
+                        <div class="dropdown-menu">
+                            <a href="#" class="dropdown-item">ERU-Euro</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-12 text-center">
+                    <h2 class="my-md-3 site-title text-white">Online Store</h2>
+                </div>
+                <div class="col-md-4 col-12 text-right">
+                    <p class="my-md-4 header-links">
+                        <a href="#" class="px-2 btn btn-primary" data-toggle="modal" data-target="#SignInModal">Sign
+                            in</a>
+                        <a href="#" class="px-1 btn btn-primary" data-toggle="modal"
+                            data-target="#CreateanaccountModal">create an account</a>
+                    </p>
+                </div>
+            </div>
+
+        </div>
+        <!-- Sign in -->
+
+        <div class="modal fade" id="SignInModal" tabindex="-1" role="dialog" aria-labelledby="SignInModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="SignInModalLabel">Login In</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Email address</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp">
+                                <small id="emailHelp" class="form-text text-muted">We'll never share your email with
+                                    anyone else.</small>
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputPassword1">Password</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1">
+                            </div>
+                            <button type="submit" class="btn btn-primary">Login</button>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- create an account -->
+
+        <div class="modal fade" id="CreateanaccountModal" tabindex="-1" role="dialog"
+            aria-labelledby="CreateanaccountModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="CreateanaccountModalLabel">Create An account</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-row">
+                                <div class="col">
+                                    <input type="text" class="form-control" placeholder="First name">
+                                </div>
+                                <div class="col">
+                                    <input type="text" class="form-control" placeholder="Last name">
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="inputEmail4">Email</label>
+                                    <input type="email" class="form-control" id="inputEmail4">
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="inputPassword4">Password</label>
+                                    <input type="password" class="form-control" id="inputPassword4">
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="cinputPassword4">Confirm Password</label>
+                                    <input type="password" class="form-control" id="cinputPassword4">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="inputAddress">Address</label>
+                                <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                            </div>
+                            <div class="form-group">
+                                <label for="inputAddress2">Address 2</label>
+                                <input type="text" class="form-control" id="inputAddress2"
+                                    placeholder="Apartment, studio, or floor">
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="inputCity">City</label>
+                                    <input type="text" class="form-control" id="inputCity">
+                                </div>
+                                <div class="form-group col-md-4">
+                                    <label for="inputState">State</label>
+                                    <select id="inputState" class="form-control">
+                                        <option selected>Choose...</option>
+                                        <option>...</option>
+                                    </select>
+                                </div>
+                                <div class="form-group col-md-2">
+                                    <label for="inputZip">Zip</label>
+                                    <input type="text" class="form-control" id="inputZip">
+                                </div>
+                            </div>
+                           
+                            <button type="submit" class="btn btn-primary">Sign Up</button>
+
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <div class="container-fluid p-0">
+            <nav class="navbar navbar-expand-lg navbar-light bg-white">
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">HOME <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">FEATURES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">COLLECTION</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">SHOP</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">ABOUT US</a>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="navbar-nav">
+                    <li class="nav-item border rounded-circle mx-2 search-icon">
+                        <i class="fas fa-search p-2"></i>
+                    </li>
+                    <li class="nav-item border rounded-circle mx-2 basket-icon">
+                        <i class="fas fa-shopping-basket p-2"></i>
+                    </li>
+                </div>
+
+            </nav>
+        </div>
+    </header>
+    <!-- /header -->
+    <!-- main -->
+    <main>
+        <!-- fitst slider -->
+        <div class="container-fluid p-0">
+            <div class="site-slider">
+                <div class="slider-one">
+                    <div>
+                        <img src="./assets/photo1.jpg" class="fluid-image" alt="banner1">
+                    </div>
+                    <div>
+                        <img src="./assets/photo2.jpg" class="fluid-image" alt="banner2">
+                    </div>
+                    <div>
+                        <img src="./assets/photo10.jpg" class="fluid-image" alt="banner3">
+                    </div>
+                </div>
+                <div class="slider-btn">
+                    <span class="prev position-top"><i class="fas fa-chevron-left"></i></span>
+                    <span class="next position-top right-0"><i class="fas fa-chevron-right"></i></span>
+                </div>
+
+            </div>
+        </div>
+        <!-- First slider -->
+        <!-- second slider -->
+        <div class="container-fluid">
+            <div class="site-slider-two px-md-4">
+                <div class="row slider-two text-center">
+                    <div class="col-md-2 product pt-md-5 pt-4">
+                        <img src="./assets/photo6.jpg" alt="photo1" width="250" height="250">
+                        <span class="border site-btn btn-span">
+                            Sofa & Chairs
+                        </span>
+                    </div>
+                    <div class="col-md-2 product pt-md-5 pt-4">
+                        <img src="./assets/photo7.jpg" alt="photo2" width="250" height="250">
+                        <span class="border site-btn btn-span">
+                            Dining
+                        </span>
+                    </div>
+                    <div class="col-md-2 product pt-md-5 pt-4">
+                        <img src="./assets/photo4.jpg" alt="photo3" width="250" height="250">
+                        <span class="border site-btn btn-span">
+                            Large Sofa
+                        </span>
+                    </div>
+                    <div class="col-md-2 product pt-md-5 pt-4">
+                        <img src="./assets/photo5.jpg" alt="photo4" width="250" height="250">
+                        <span class="border site-btn btn-span">
+                            Wood Table
+                        </span>
+                    </div>
+                    <div class="col-md-2 product pt-md-5 pt-4">
+                        <img src="./assets/photo3.jpg" alt="photo5" width="250" height="250">
+                        <span class="border site-btn btn-span">
+                            Soft Sofa
+                        </span>
+                    </div>
+                    <div class="col-md-2 product pt-md-5 pt-4">
+                        <img src="./assets/photo9.jpg" alt="photo6" width="250" height="250">
+                        <span class="border site-btn btn-span">
+                            Table
+                        </span>
+                    </div>
+
+
+                </div>
+                <div class="slider-btn">
+                    <span class="prev position-top">
+                        <i class="fas fa-chevron-left fa-2x  text-secondary"></i>
+                    </span>
+                    <span class="next position-top right-0">
+                        <i class="fas fa-chevron-right fa-2x text-secondary"></i>
+                    </span>
+                </div>
+
+            </div>
+        </div>
+        <!-- /second slider -->
+    </main>
+    <footer></footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./js/main.js"></script>
+
+</body>
+
+</html>
